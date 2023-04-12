@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengelolaan Data Buku</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Personal Bookshelf</h1>
+    </header>
+    <div class="wrapper">
+        <div class="container user-input shadow">
+            <h2 class="text-center">Tambah data buku</h2>
+            <form id="form" action="#">
+                <div class="form-group">
+                    <label>Judul Buku</label>
+                    <input class="input-control" id="judul" autocomplete="off" required/>
+                </div>
+                <div class="form-group">
+                    <label>Penulis</label>
+                    <input class="input-control" id="penulis" autocomplete="off" required/>
+                </div>
+                <div class="form-group">
+                    <label>Penerbit</label>
+                    <input class="input-control" id="penerbit" autocomplete="off" required/>
+                    <label class="right-inline">Tahun Terbit</label>
+                    <input class="input-control" id="tahunTerbit" autocomplete="off" required/>
+                </div>
+                <div class="form-group">
+                    <label>Jumlah Halaman</label>
+                    <input class="input-control" id="jumlahHalaman" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label>Link E-Book</label>
+                    <input class="input-control" id="link" autocomplete="off" >
+                </div>
+                <div class="form-group">
+                    <label>&nbsp;</label>
+                    <button class="add-button"></button>
+                </div>
+            </form>
+        </div>
+        <div class="container rakBuku">
+            <div class="flex-item on-going shadow">
+                <h2>Buku yang belum selesai dibaca</h2>
+                <div class="list-item" id="belumSelesai"></div>
+            </div>
+            <div class="flex-item finish shadow">
+                <h2>Buku yang sudah selesai dibaca</h2>
+                <div class="list-item" id="sudahSelesai"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
