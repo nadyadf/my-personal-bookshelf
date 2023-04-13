@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #d4a373;
+    padding: 16px;
+    color: #fefae0;
+    text-align: center;
+}
+.text-center {
+    text-align: center;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.user-input {
+    flex-direction: column;
+    background-color: #fefae0;
+    padding: 20px;
+}
+
+/* Form specific formatting */
+.form-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+.form-group label {
+    flex: none;
+    display: block;
+    width: 200px;
+    font-size: 1.2em;
+}
+.form-group label.right-inline {
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 8px;
+    width: auto;
+}
+.form-group .input-control {
+    flex: 1 1 auto;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: -4px;
+    border: 2px solid #d4a373;
+    background-color: #faedcd;
+    border-radius: 4px;
+    font-family: 'Sora', sans-serif;
+}
+.form-group .input-control:focus{
+    outline: none;
+}
+.btn-submit {
+    padding: 10px 15px;
+    min-width: 100px;
+    cursor: pointer;
+    background-color: #faedcd;
+    border: 2px solid #d4a373;
+    border-radius: 4px;
+}
+.form-group:last-child {
+    justify-content: space-between;
+}
+.btn-submit:hover {
+    background-color: #d4a373;
+    color: white;
+}
+.shadow {
+    box-shadow: 0 5px 10px rgba(rgba(204, 213, 174, 1)), 0 15px 40px rgba(rgba(233, 237, 201, 1));
+}
+.flex-item {
+    padding: 20px;
+    flex: 1 1 auto;
+    max-width: 48%;
+    background-color: #fefae0;
+    border-radius: 8px;
+}
+.flex-item h2 {
+    text-align: center;
+}
+.rakBuku {
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 8px;
+}
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.link-buku {
+    text-decoration: none;
+    color: black;
+}
+
+.inner {
+    max-width: 85%;
+}
+
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    margin-top: 5px;
+}
+@media (max-width:768px) {
+    .form-group {
+        flex-direction: column;
+    }
+    .form-group .input-control{
+        margin-top: 2px;
+    }
+    .form-group label.right-inline {
+        text-align: left;
+        padding-left: 0;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .flex-item {
+        min-height: 200px;
+        max-width: 100%;
+    }
+}
+@media (max-width:550px) {
+    body {
+        font-size: smaller;
+    }
+    .rakBuku button {
+        width: 30px;
+        height: 30px;
+    }
+}
+.check-button {
+    width: 40px;
+    height: 40px;
+    background: url('../img/checkbox-outline.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+}
+.check-button:hover {
+    background: url('../img/checkbox-solid.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+    background: url('../img/undo-outline.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+}
+
+.undo-button:hover {
+    background: url('../img/undo-solid.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+    background: url('../img/trash-outline.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    margin-left: 16px;
+}
+
+.trash-button:hover {
+    background: url('../img/trash-solid.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.add-button {
+    width: 40px;
+    height: 40px;
+    background: url('../img/add-outline.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+}
+
+.add-button:hover {
+    background: url('../img/add-solid.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+button {
+    transition: all ease 0.3s;
+}
