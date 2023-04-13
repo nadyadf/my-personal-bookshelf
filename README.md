@@ -1,2 +1,2 @@
 # my-personal-bookshelf
-Aplikasi website perpustakaan pribadi yang dibangun dengan javascript native dan masih akan saya kembangkan lagi fitturnya di masa mendatang.
+Aplikasi website perpustakaan pribadi yang dibangun dengan Javascript native. Kedepannya website ini akan saya kembangkan lagi menyesuaikan kebutuhan.
